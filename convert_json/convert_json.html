@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex" />
+        <title>JSON test</title>
+    </head>
+    <body>
+        <script>
+        
+        var xmlhttp = new XMLHttpRequest();
+
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4) {
+                if (xmlhttp.status == 200) {
+                    var parsedJson = JSON.parse(xmlhttp.responseText);
+
+                    for (let index = 0; index < parsedJson.length; index++) {
+                        delete parsedJson[index].n;
+                        delete parsedJson[index].bodyKanji;
+                        delete parsedJson[index].nameKanji;
+                        delete parsedJson[index].nameKana;
+                        delete parsedJson[index].imageWref;
+                        delete parsedJson[index].imageURL;
+                        
+                        let strArr = parsedJson[index].bodyKana.split(" ");
+                        parsedJson[index].kami = strArr[0] + " " + strArr[1] + " " + strArr[2];
+                        parsedJson[index].shimo = strArr[3] + " " + strArr[4];
+                        delete parsedJson[index].bodyKana;
+
+                        parsedJson[index].kimariLength = parsedJson[index].kimariji.length;
+                        delete parsedJson[index].kimariji;
+                    }
+                    console.log(parsedJson);
+                    console.log(JSON.stringify(parsedJson));
+                } else {
+                }
+            }
+        }
+        xmlhttp.open("GET", "https://gist.githubusercontent.com/wakaba/8363dc27f4c54f76b4a7/raw/hyakunin.json");
+        xmlhttp.send();
+        </script>
+        
+    </body>
+</html>
