@@ -1,8 +1,17 @@
 <?php
-    $name = $_POST["name"];
+    $name = "";
+    if (isset($_POST["name"])) {
+        $name = $_POST["name"];
+    }
     $time = time();
-    $gLevel = $_POST["gLevel"];
-    $score = $_POST["score"];
+    $gLevel = 0;
+    if (isset($_POST["gLevel"])) {
+        $gLevel = $_POST["gLevel"];
+    }
+    $score = 0;
+    if (isset($_POST["score"])) {
+        $score = $_POST["score"];
+    }
     function find_name($prev_data,$obj){
         $index = 0;
         $new_data = $prev_data;

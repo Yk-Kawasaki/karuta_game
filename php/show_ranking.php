@@ -1,5 +1,8 @@
 <?php
-    $gLevel = $_POST["gLevel"];
+    $gLevel = 0;
+    if (isset($_POST["gLevel"])) {
+        $gLevel = $_POST["gLevel"];
+    }
     $url = "ranking_bachelor.json";
     switch ($gLevel) {
         case 1:
