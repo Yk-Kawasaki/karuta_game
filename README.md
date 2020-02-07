@@ -2,11 +2,14 @@
 おひとり様用かるたゲームです。  
 百人一首の練習にお使いください。  
 PHP対応のサーバに上げればランキング機能も使えます。  
-[テストプレイ（2×2 初心者向け）](http://ykkawasaki.php.xdomain.jp/karuta2x2/game_index.html)  
-[テストプレイ（2×2 初心者向け ミラー）](http://ykkawasaki.starfree.jp/karuta2x2/game_index.html)  
 
-[テストプレイ（5×5）](http://ykkawasaki.php.xdomain.jp/karuta5x5/game_index.html)  
-[テストプレイ（5×5 ミラー）](http://ykkawasaki.starfree.jp/karuta5x5/game_index.html)  
+[テストプレイ（2×2 初心者向け）](https://ykkawasaki.000webhostapp.com/karuta2x2/game_index.html)  
+[テストプレイ（2×2 初心者向け ミラー1）](http://ykkawasaki.php.xdomain.jp/karuta2x2/game_index.html)  
+[テストプレイ（2×2 初心者向け ミラー2）](http://ykkawasaki.starfree.jp/karuta2x2/game_index.html)  
+
+[テストプレイ（5×5）](https://ykkawasaki.000webhostapp.com/karuta5x5/game_index.html)  
+[テストプレイ（5×5 ミラー1）](http://ykkawasaki.php.xdomain.jp/karuta5x5/game_index.html)  
+[テストプレイ（5×5 ミラー2）](http://ykkawasaki.starfree.jp/karuta5x5/game_index.html)  
 
 ## Usage
 PHP対応のサーバにPHPディレクトリ以下のファイルをアップロードしてください。  
